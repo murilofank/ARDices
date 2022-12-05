@@ -56,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				042E3E66292DBECA00C7EC3D /* AppDelegate.swift */,
-				042E3E68292DBECA00C7EC3D /* art.scnassets */,
 				042E3E6A292DBECA00C7EC3D /* ViewController.swift */,
 				042E3E6C292DBECA00C7EC3D /* Main.storyboard */,
+				042E3E68292DBECA00C7EC3D /* art.scnassets */,
 				042E3E6F292DBECB00C7EC3D /* Assets.xcassets */,
 				042E3E71292DBECB00C7EC3D /* LaunchScreen.storyboard */,
 			);
@@ -295,6 +295,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +326,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
