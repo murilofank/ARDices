@@ -13,6 +13,8 @@
 		042E3E6E292DBECA00C7EC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E3E6C292DBECA00C7EC3D /* Main.storyboard */; };
 		042E3E70292DBECB00C7EC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042E3E6F292DBECB00C7EC3D /* Assets.xcassets */; };
 		042E3E73292DBECB00C7EC3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042E3E71292DBECB00C7EC3D /* LaunchScreen.storyboard */; };
+		043A4AEB29477A2400C5C0DB /* multipleDice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043A4AEA29477A2400C5C0DB /* multipleDice.mp3 */; };
+		043A4AED29477A2B00C5C0DB /* singleDice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 043A4AEC29477A2B00C5C0DB /* singleDice.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		042E3E6D292DBECA00C7EC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		042E3E6F292DBECB00C7EC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042E3E72292DBECB00C7EC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043A4AEA29477A2400C5C0DB /* multipleDice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = multipleDice.mp3; sourceTree = "<group>"; };
+		043A4AEC29477A2B00C5C0DB /* singleDice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = singleDice.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04132D662942583400137BCC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				043A4AEA29477A2400C5C0DB /* multipleDice.mp3 */,
+				043A4AEC29477A2B00C5C0DB /* singleDice.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		042E3E5A292DBECA00C7EC3D = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +74,7 @@
 				042E3E68292DBECA00C7EC3D /* art.scnassets */,
 				042E3E6F292DBECB00C7EC3D /* Assets.xcassets */,
 				042E3E71292DBECB00C7EC3D /* LaunchScreen.storyboard */,
+				04132D662942583400137BCC /* Sounds */,
 			);
 			path = ARDices;
 			sourceTree = "<group>";
@@ -124,7 +138,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				042E3E69292DBECA00C7EC3D /* art.scnassets in Resources */,
+				043A4AEB29477A2400C5C0DB /* multipleDice.mp3 in Resources */,
 				042E3E73292DBECB00C7EC3D /* LaunchScreen.storyboard in Resources */,
+				043A4AED29477A2B00C5C0DB /* singleDice.mp3 in Resources */,
 				042E3E70292DBECB00C7EC3D /* Assets.xcassets in Resources */,
 				042E3E6E292DBECA00C7EC3D /* Main.storyboard in Resources */,
 			);

@@ -81,26 +81,28 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let randomZ = Float(arc4random_uniform(4) + 1) * (Float.pi/2)
         
         dice.runAction(SCNAction.rotateBy(x: CGFloat(randomX), y: 0, z: CGFloat(randomZ), duration: 0.5))
-        playSound()
+        playSound(multipleDices: false)
     }
     
     func rollAll() {
         if !diceArray.isEmpty {
             for dice in diceArray {
                 roll(dice: dice)
-                playSound()
+            }
+            if diceArray.count > 2 {
+                playSound(multipleDices: true)
+            } else {
+                playSound(multipleDices: false)
             }
         }
     }
     
     @IBAction func rollAgain(_ sender: UIBarButtonItem) {
         rollAll()
-        playSound()
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         rollAll()
-        playSound()
     }
     
     @IBAction func clearDices(_ sender: UIBarButtonItem) {
@@ -111,10 +113,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     
-    func playSound() {
-        let url = Bundle.main.url(forResource: "C", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player.play()
+    func playSound(multipleDices: Bool) {
+        if multipleDices {
+            let url = Bundle.main.url(forResource: "multipleDice", withExtension: "mp3")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
+        } else {
+            let url = Bundle.main.url(forResource: "singleDice", withExtension: "mp3")
+            player = try! AVAudioPlayer(contentsOf: url!)
+            player.play()
+        }
     }
     
     //MARK: - ARSCViewDelegateMethods
@@ -140,7 +148,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         planeNode.transform = SCNMatrix4MakeRotation(-Float.pi/2, 1, 0, 0)
         
         let gridMaterial = SCNMaterial()
-        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/grid.png")
+        gridMaterial.diffuse.contents = UIImage(named: "art.scnassets/table.png")
         
         plane.materials = [gridMaterial]
         
