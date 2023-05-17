@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'Test publishing public CocoaPods'
   s.homepage         = 'https://github.com/murilofank/ARDices'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'https://github.com/murilofank/ARDices/blob/main/README.md' }
   s.author           = { 'services@caf.io' => 'services@caf.io' }
   s.source           = { :git => 'https://github.com/murilofank/ARDices.git', :tag => s.name + "-" + s.version.to_s }
   
