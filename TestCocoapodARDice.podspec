@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Test'
+  s.name             = 'TestCocoapodARDice'
   s.version          = '0.0.2'
   s.summary          = 'Test publishing public CocoaPods'
   s.homepage         = 'https://github.com/murilofank/ARDices'
